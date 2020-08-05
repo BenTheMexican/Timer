@@ -1,6 +1,5 @@
 html, body {
   margin:0px;
-  height:100%;
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
   
 }
@@ -59,7 +58,7 @@ td:nth-child(1) {
 
 #wrapper {
   height:100vh;
-  background: blue;
+  background: red;
  
 }
 
@@ -70,7 +69,7 @@ td:nth-child(1) {
 }
 
 #right {  
- height: 80%; 
+ 
 
  } 
  
@@ -78,14 +77,14 @@ td:nth-child(1) {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%
+  
   width: 100%;
 } 
  
  #table { 
   float:top;
   width: 100%;
-  height: 100%;
+  
   color: white;
   font-size: 200%;
   border: 1px solid black;
