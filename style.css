@@ -1,6 +1,6 @@
 html, body {
   margin:0px;
-  height:100vh;
+  height:100%;
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
   *// color: linear-gradient(180deg, rgba(0,207,255,1) 0%, rgba(180,113,255,1) 100%);
 }
