@@ -84,7 +84,7 @@ td:nth-child(1) {
  #table { 
   float:top;
   display: flex;
-  width: 500px;
+  width: 100%;
   height: 100%;
   color: white;
   font-size: 200%;
