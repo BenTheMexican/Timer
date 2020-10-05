@@ -3,6 +3,7 @@ html, body {
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
   width:100vw;
   overflow: hidden
+  color: linear-gradient(180deg, rgba(0,207,255,1) 0%, rgba(180,113,255,1) 100%);
 }
 
 td {
@@ -38,7 +39,6 @@ a:link, a:visited {
 #container {
   width:100vw;
   height:85vh;
-  background: green;
 }
 
 #atsymbol {
