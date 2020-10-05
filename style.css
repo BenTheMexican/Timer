@@ -37,8 +37,8 @@ a:link, a:visited {
 
 #container {
   width:100vw;
-  height:80vh;
-  background: blue;
+  height:85vh;
+  background: green;
 }
 
 #atsymbol {
@@ -78,7 +78,7 @@ a:link, a:visited {
   width: 95vw;
   margin-left: auto;
   margin-right: auto;
-  font-size: 5vw;
+  font-size: 4vw;
  } 
  
   #form { 
