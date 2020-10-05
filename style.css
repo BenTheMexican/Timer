@@ -6,7 +6,7 @@ html, body {
 }
 
 td {
-	border: 1px solid blue;
+border: 1px solid blue;
 }
 
 td:nth-child(1) {
@@ -16,7 +16,8 @@ td:nth-child(1) {
 }
 
 tr:nth-child(1) {
-  font-size: 8vw;
+  font-size: 7vw;
+  text-align: center;
   color: white;
 }
 
@@ -36,6 +37,7 @@ a:link, a:visited {
 
 #container {
   width:100vw;
+  height:100vh;
   background: blue;
 }
 
@@ -84,7 +86,7 @@ a:link, a:visited {
   background: none;
   color: white;
   font-size: 100%;
-  width: 10vw;
+  width: 12vw;
 } 
 
 
