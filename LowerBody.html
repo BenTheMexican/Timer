@@ -3,6 +3,25 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 <script type="text/javascript" src="stopWatch.js"></script>
 <script type="text/javascript" src="dateTime.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>	
+<script>	
+var $form = $('form#test-form'),
+    url = 'https://script.google.com/macros/s/AKfycbwknyqlM5WeYVvpA9dH2dy7xNIGCkcIKzjuX0ihameWGp-z2F4/exec'
+
+$('#submit-form').on('click', function(e) {
+  e.preventDefault();
+  var jqxhr = $.ajax({
+    url: url,
+    method: "GET",
+    dataType: "json",
+    data: $form.serializeObject()
+  }).success(
+    // do something
+  );
+})	
+</script>	
+	
+	
 <body>
 
 <div id="container"> 
@@ -32,11 +51,11 @@
 	     
  <tr>
     <td>Squat</td>
-    <td><input type="text" id="form" ><br></td>
-    <td><input type="text" id="form" ><br></td>
-	<td><input type="text" id="form" ><br></td>
-	<td><input type="text" id="form" ><br></td>
-	<td><input type="text" id="form" ><br></td>
+    <td><input type="text" id="form" name="weight"><br></td>
+    <td><input type="text" id="form" name="reps"><br></td>
+	<td><input type="text" id="form" name="c1"><br></td>
+	<td><input type="text" id="form" name="c2"><br></td>
+	<td><input type="text" id="form" name="c2"><br></td>
   </tr>
   
   <tr>
@@ -103,7 +122,7 @@
   </tr>
   </tbody>
 </table>
- 
+ <button type="submit"id="submit-form">Submit</button> 
 </div>
 </body>
 </html>
