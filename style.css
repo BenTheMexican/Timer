@@ -10,13 +10,12 @@ td {
 
 td:nth-child(1) {
   font-size: 4vw;
-  width: 40%;
+  width: 30%;
   color: white;
 }
 
 tr:nth-child(1) {
-  font-size: 4vw;
-  width: 60%;
+  font-size: 8vw;
   color: white;
 }
 
@@ -35,7 +34,6 @@ a:link, a:visited {
 
 
 #container {
-  height:100vh;
   width:100vw;
   background: red;
 }
