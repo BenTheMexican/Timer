@@ -1,0 +1,167 @@
+<html>
+<title>Timer</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="stopWatch.js"></script>
+<script type="text/javascript" src="dateTime.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+  
+<link rel="apple-touch-startup-image" href="launch.png">
+
+<div id="container"> </div>
+<div id="mySidebar" class="sidebar">
+  <div class="colorBlock" id="Grad1" onclick="closeNav()"></div>
+   <div class="colorBlock" id="Grad2" onclick="closeNav()"></div>
+    <div class="colorBlock" id="Grad3" onclick="closeNav()"></div>
+	 <div class="colorBlock" id="Grad4" onclick="closeNav()"></div>
+	 <div class="colorBlock" id="Grad5" onclick="closeNav()"></div>
+
+
+</div>
+
+<body>
+
+<div class="wrapper">
+<div id="UpperMenu" onclick="openNav()"> &#9022; </div>
+<div id="RightMenu"> &#8984; </div>
+
+
+ <div id="left">
+    <div id="timerContainer">
+    <div class="timer" onclick="startTimer()">Start</div>
+    <div class="startTimer reset" onclick="startTimer()" ></div>
+    <div class="pauseTimer reset" onclick="pauseTimer()" > </div>
+    <div class="resetTimer reset" onclick="resetTimer()"></div>
+  </div>
+  <script type="text/javascript" src="stopWatch.js"></script>
+  </div>
+
+  <div id="right">
+  
+     <table id="table">
+	 
+ <tr>
+    <td></td>
+    <td>Kg</td>
+	<td>1</td>
+	<td>2<br></td>
+	<td>3<br></td>
+	<td>4<br></td>
+	<td>5<br></td>
+  </tr>
+	
+	<tr>
+    <td><input  value="Exercise 1" id="form"/></td>
+	<form id="myForm">
+    <td><input id="form"/></td>
+    <td><input id="form"/></td>
+	<td><input id="form"/></td>
+	<td><input id="form"/></td>
+	<td><input id="form"/></td>
+	<td><input id="form"/></td>
+	</tr>
+	
+	<tr>
+    <td><input  value="Exercise 2" id="form"/></td>
+	<form id="myForm">
+    <td><input id="form"/></td>
+    <td><input id="form"/></td>
+	<td><input id="form"/></td>
+	<td><input id="form"/></td>
+	<td><input id="form"/></td>
+	<td><input id="form"/></td>
+	</tr>
+	
+	<tr>
+    <td><input  value="Exercise 3" id="form"/></td>
+	<form id="myForm">
+    <td><input id="form"/></td>
+    <td><input id="form"/></td>
+	<td><input id="form"/></td>
+	<td><input id="form"/></td>
+	<td><input id="form"/></td>
+	<td><input id="form"/></td>
+	</tr>
+	
+	<tr>
+    <td><input  value="Exercise 4" id="form"/></td>
+	<form id="myForm">
+    <td><input id="form"/></td>
+    <td><input id="form"/></td>
+	<td><input id="form"/></td>
+	<td><input id="form"/></td>
+	<td><input id="form"/></td>
+	<td><input id="form"/></td>
+	</tr>
+
+		<tr>
+    <td><input  value="Exercise 5" id="form"/></td>
+	<form id="myForm">
+    <td><input id="form"/></td>
+    <td><input id="form"/></td>
+	<td><input id="form"/></td>
+	<td><input id="form"/></td>
+	<td><input id="form"/></td>
+	<td><input id="form"/></td>
+	</tr>
+	
+	<tr>
+    <td><input  value="Exercise 6" id="form"/></td>
+	<form id="myForm">
+    <td><input id="form"/></td>
+    <td><input id="form"/></td>
+	<td><input id="form"/></td>
+	<td><input id="form"/></td>
+	<td><input id="form"/></td>
+	<td><input id="form"/></td>
+	</tr>
+	
+	<tr>
+    <td><input  value="Exercise 7" id="form"/></td>
+	<form id="myForm">
+    <td><input id="form"/></td>
+    <td><input id="form"/></td>
+	<td><input id="form"/></td>
+	<td><input id="form"/></td>
+	<td><input id="form"/></td>
+	<td><input id="form"/></td>
+	</tr>
+	
+	<tr>
+    <td><input  value="Exercise 8" id="form"/></td>
+	<form id="myForm">
+    <td><input id="form"/></td>
+    <td><input id="form"/></td>
+	<td><input id="form"/></td>
+	<td><input id="form"/></td>
+	<td><input id="form"/></td>
+	<td><input id="form"/></td>
+	</tr>
+	
+  </tbody>
+  </form>
+</table>
+
+
+
+   <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+   <script type="text/javascript" charset="utf-8">
+	
+   //Create anonymous function that listens for a click on anything with the class colorBlock
+    $(".colorBlock").click(function() {
+      //Get the background color of the clicked color block by using the this object
+      var $backgroundColor = $(this).css("background-image");
+      //Set the body's background-color to the received background-color
+      $(".wrapper").css("background-image", $backgroundColor);
+    });
+	
+  </script>
+  
+</div>
+
+
+
+</div>
+</body>
+</html>
